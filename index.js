@@ -2,6 +2,7 @@
 
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
 import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
@@ -59,6 +60,12 @@ class HostingerMCPServer {
           mcp: '/mcp'
         }
       });
+    });
+
+    // SSE endpoint for MCP communication
+    this.app.get('/sse', async (req, res) => {
+      const transport = new SSEServerTransport('/sse', res);
+      await this.server.connect(transport);
     });
 
     // MCP endpoint for JSON-RPC communication
