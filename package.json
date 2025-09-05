@@ -1,0 +1,43 @@
+{
+  "name": "hostinger-mcp-server",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol (MCP) server for Hostinger API integration. Enables natural language interactions with your hosting services through Claude and other AI assistants.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "hostinger-api-mcp": "^0.0.22"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "hostinger",
+    "hosting",
+    "server",
+    "claude",
+    "ai",
+    "assistant",
+    "natural-language",
+    "api",
+    "integration",
+    "vps",
+    "domains"
+  ],
+  "author": "ignitabull18",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ignitabull18/hostinger-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ignitabull18/hostinger-mcp-server/issues"
+  },
+  "homepage": "https://github.com/ignitabull18/hostinger-mcp-server#readme"
+}
