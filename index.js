@@ -7,6 +7,7 @@ import {
   ListToolsRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
 import http from 'http';
+import express from 'express';
 
 class HostingerMCPServer {
   constructor() {

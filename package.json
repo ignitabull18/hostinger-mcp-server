@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^0.6.0",
-    "hostinger-api-mcp": "^0.0.22"
+    "hostinger-api-mcp": "^0.0.22",
+    "express": "^4.19.2"
   },
   "engines": {
     "node": ">=18"
